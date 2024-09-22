@@ -5,6 +5,9 @@ import PackageDescription
 let package = Package(
    name: "GeoDBCitiesAPI",
    platforms: [.macOS(.v10_15)],
+   products: [
+    .library(name: "GeoDBCitiesAPI", targets: ["GeoDBCitiesAPI"]),
+   ],
    dependencies: [
     .package(url: "https://github.com/apple/swift-openapi-generator", from: "1.0.0"),
     .package(url: "https://github.com/apple/swift-openapi-runtime", from: "1.0.0"),
